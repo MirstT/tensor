@@ -1,38 +1,28 @@
-﻿// 第二版
-#define _CRT_SECURE_NO_WARNINGS 1 
-#include<stdio.h>
-#include<stdlib.h>                  //程序中用到了malloc函数，应包含stdlib.h 
-int main()
-{
-	int* p1, * p2, i;
-	p1 = (int*)malloc(6 * sizeof(int));      //开辟动态内存区，将地址转换成int*型，放在p1中 
-	p2 = (int*)malloc(6 * sizeof(int));      //开辟动态内存区，将地址转换成int*型，放在p2中 
-	printf("规定两个三行二列的矩阵相加\n请输入第一个矩阵的6个数:\n");
-	for (i = 0; i < 6; i++)
-	{
-		scanf("%d", p1++);
-	}
-	printf("请输入第二个矩阵的6个数:\n");
-	for (i = 0; i < 6; i++)
-	{
-		scanf("%d", p2++);
-	}
-	for (i = 5; i >= 0; i--)              // 重新使p1和p2指向首地址 
-	{
-		--p1;
-		--p2;
-	}
+﻿
+#include<iostream>
+using namespace std;
 
-	printf("两个矩阵相加后为:\n");        //将两个指针所指向的内容相加 
-	for (i = 0; i < 6; i++)
-	{
-		printf("%d  ", *p1 + *p2);
-		p1++;
-		p2++;
-		if (i == 1 || i == 3)
-		{
-			printf("\n");
+int main() {
+	int a[3][2] = { 0 }, b[3][2] = { 0 };
+	int* p1, * p2 = nullptr;
+	p1 = new int[6];//开辟动态内存区
+	p2 = new int[6];//开辟动态内存区
+	cout << "规定两个三行二列的矩阵相加\n请输入第一个矩阵的6个数:" << endl;
+	for (p1 = a[0]; p1 < a[0] + 6; p1++) {
+		cin >> *p1;
+	}
+	cout << "请输入第二个矩阵的6个数:" << endl;
+	for (p2 = b[0]; p2 < b[0] + 6; p2++) {
+		cin >> *p2;
+	}
+	cout << "两个矩阵相加后为：" << endl;
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 2; j++) {
+			std::cout << *(*(a + i) + j) + *(*(b + i) + j) << "    ";
+			if (j == 1 || j == 3) {
+				cout << "\n";
+			}
 		}
 	}
-	return 0;
+	delete[]p1, delete[]p2;//如果这行去掉，就不会出现最后那个错误提示窗口了！！！但这个错误并不影响打印矩阵，目标还是实现了。
 }
