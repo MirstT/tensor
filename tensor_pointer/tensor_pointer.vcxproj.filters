@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tensor_pointer.cpp">
+    <ClCompile Include="tensor_pointer.cc">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
