@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tensor", "tensor\tensor.vcxproj", "{9501191C-44CD-469D-9B68-5E49F3DDC380}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tensor_c_array", "tensor_c_array\tensor_c_array.vcxproj", "{D94E00F7-CC59-450F-B903-CF4BC019B6FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{9501191C-44CD-469D-9B68-5E49F3DDC380}.Release|x64.Build.0 = Release|x64
 		{9501191C-44CD-469D-9B68-5E49F3DDC380}.Release|x86.ActiveCfg = Release|Win32
 		{9501191C-44CD-469D-9B68-5E49F3DDC380}.Release|x86.Build.0 = Release|Win32
+		{D94E00F7-CC59-450F-B903-CF4BC019B6FC}.Debug|x64.ActiveCfg = Debug|x64
+		{D94E00F7-CC59-450F-B903-CF4BC019B6FC}.Debug|x64.Build.0 = Debug|x64
+		{D94E00F7-CC59-450F-B903-CF4BC019B6FC}.Debug|x86.ActiveCfg = Debug|Win32
+		{D94E00F7-CC59-450F-B903-CF4BC019B6FC}.Debug|x86.Build.0 = Debug|Win32
+		{D94E00F7-CC59-450F-B903-CF4BC019B6FC}.Release|x64.ActiveCfg = Release|x64
+		{D94E00F7-CC59-450F-B903-CF4BC019B6FC}.Release|x64.Build.0 = Release|x64
+		{D94E00F7-CC59-450F-B903-CF4BC019B6FC}.Release|x86.ActiveCfg = Release|Win32
+		{D94E00F7-CC59-450F-B903-CF4BC019B6FC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
