@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bd29217d-7329-4a59-98a1-c4c2575717a6}</ProjectGuid>
+    <ProjectGuid>{BD29217D-7329-4A59-98A1-C4C2575717A6}</ProjectGuid>
     <RootNamespace>tensorstdarray</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
