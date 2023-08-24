@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9501191c-44cd-469d-9b68-5e49f3ddc380}</ProjectGuid>
-    <RootNamespace>tensor</RootNamespace>
+    <ProjectGuid>{c8623011-4b41-48c7-a857-8331c7335160}</ProjectGuid>
+    <RootNamespace>tensormalloc</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="tensor.cc" />
+    <ClCompile Include="tensor_malloc.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9501191c-44cd-469d-9b68-5e49f3ddc380}</ProjectGuid>
-    <RootNamespace>tensor</RootNamespace>
+    <ProjectGuid>{51f7b178-2387-4fc9-9caf-e484140a2998}</ProjectGuid>
+    <RootNamespace>tensorpointer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="tensor.cc" />
+    <ClCompile Include="tensor_pointer.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
